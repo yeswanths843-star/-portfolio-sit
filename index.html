@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name — Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="logo">YourName<span>.dev</span></a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="container hero-inner">
+      <p class="hero-eyebrow">Hi, I'm</p>
+      <h1>Your Name</h1>
+      <h2 class="hero-role">Full-Stack Web Developer</h2>
+      <p class="hero-text">
+        I build clean, responsive web applications from front to back —
+        turning ideas into working products with JavaScript, Node.js, and databases.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <p class="about-text">
+          I'm a developer who enjoys building complete web applications —
+          from the interface someone clicks through, to the server logic and
+          database underneath it. This portfolio itself is a full-stack project:
+          a static frontend, an Express API, and a MongoDB database working together.
+        </p>
+        <ul class="skills-list">
+          <li>HTML5 &amp; CSS3</li>
+          <li>JavaScript (ES6+)</li>
+          <li>Node.js &amp; Express</li>
+          <li>MongoDB &amp; Mongoose</li>
+          <li>Git &amp; GitHub</li>
+          <li>REST API Design</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <p id="projects-status" class="projects-status">Loading projects…</p>
+      <div id="projects-grid" class="projects-grid"></div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="contact-intro">Have a project in mind or just want to say hi? Send me a message.</p>
+      <form id="contact-form" class="contact-form">
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+        <p id="form-status" class="form-status"></p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Your Name. Built with HTML, CSS, JavaScript, Node.js, Express &amp; MongoDB.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
